@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Chistes - Cuidemos el Agua en Pachuca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🌊 Cuidemos el Agua</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="chistes.html" class="nav-link active">Chistes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="joke-wrapper">
+        <div class="joke-container-main">
+            <header class="joke-header">
+                <h1>🌊 Cuidemos el Agua en Pachuca</h1>
+                <p class="subtitle">Generador de Chistes sobre el Agua</p>
+            </header>
+
+            <main class="joke-main">
+                <section class="joke-section">
+                    <div class="joke-card">
+                        <div id="joke-container" class="joke-text">
+                            <p id="joke-content">Presiona el botón para obtener un chiste...</p>
+                        </div>
+                        <button id="get-joke-btn" class="btn-primary">Obtener Chiste 😄</button>
+                        <button id="share-btn" class="btn-secondary" style="display: none;">Compartir 📢</button>
+                    </div>
+
+                    <div class="loading" id="loading" style="display: none;">
+                        <p>Cargando chiste...</p>
+                    </div>
+                </section>
+
+                <section class="info-section">
+                    <h2>Sobre este generador</h2>
+                    <p>Este generador utiliza la API de <strong>JokeAPI</strong> para traerte chistes aleatorios en español. 
+                       ¡Disfruta de un momento de diversión mientras aprendes sobre la importancia de cuidar el agua!</p>
+                </section>
+            </main>
+
+            <footer class="joke-footer">
+                <p>&copy; 2024 Cuidemos el Agua en Pachuca | Educación Ambiental 🌿</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
